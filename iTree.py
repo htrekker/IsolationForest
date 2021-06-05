@@ -14,6 +14,16 @@ class Node(object):
 
 class iTree(object):
     def __init__(self, hlim):
+        '''
+        Initalize function for iTree. The class contains three attributes, which 
+        are:
+            - **root**: root node of the tree
+            - **params**: the parameters of the tree
+            - **hlim**: the height limit of the tree
+
+        ## Parameters:
+            - **hlim**: the height limit of balabala
+        '''
         self.root = None
         self.params = {}
         self.hlim = hlim
@@ -93,10 +103,10 @@ class iTree(object):
         dump a tree into the given fp. (default is None)
         if the fp is not given, the parameters will be saved into self.params
 
-        Parameters:
+        ## Parameters:
             - tree: the node
             - fp: the file descriptor. (default is None)
-        Returns:
+        ## Returns:
             no return
         '''
         def dump_node(node):
